@@ -19,6 +19,9 @@ public class EyeTackingDemo : MonoBehaviour
     [SerializeField]
     private Color rayColorHoverState = Color.red;
 
+    [SerializeField]
+    private GameObject debug;
+
     private LineRenderer lineRenderer;
 
     
@@ -31,16 +34,29 @@ public class EyeTackingDemo : MonoBehaviour
 
     private void SetupRay()
     {
-        lineRenderer.useWorldSpace = false;
-        lineRenderer.positionCount = 2;
-        lineRenderer.startWidth = rayWith;
-        lineRenderer.endWidth = rayWith;
-        lineRenderer.startColor = rayColorDefaultState;
-        lineRenderer.endColor = rayColorDefaultState;
-        lineRenderer.SetPosition(0, transform.position);
-        lineRenderer.SetPosition(1, new Vector3(transform.position.x,transform.position.y,transform.position.z + rayDistance));
+        //lineRenderer.useWorldSpace = false;
+        //lineRenderer.positionCount = 2;
+        //lineRenderer.startWidth = rayWith;
+        //lineRenderer.endWidth = rayWith;
+        //lineRenderer.startColor = rayColorDefaultState;
+        //lineRenderer.endColor = rayColorDefaultState;
+        //lineRenderer.SetPosition(0, transform.position);
+        //lineRenderer.SetPosition(1, new Vector3(transform.position.x,transform.position.y,transform.position.z + rayDistance));
     }
 
+    private void FixedUpdate()
+    {
+        RaycastHit hit;
+
+        Vector3 direction = transform.TransformDirection(Vector3.forward) * rayDistance;
+
+        if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity, layerMask)){
+            Debug.Log("hit something");
+            debug.transform.position = hit.point;
+            Debug.Log("Hit Location: " + hit.point);
+        }
+
+    }
     // Update is called once per frame
     void Update()
     {
