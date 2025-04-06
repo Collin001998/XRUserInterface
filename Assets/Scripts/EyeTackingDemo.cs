@@ -52,6 +52,7 @@ public class EyeTackingDemo : MonoBehaviour
 
         if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity, layerMask)){
             Debug.Log("hit something");
+            Debug.Log(hit.collider.gameObject.name);
             debug.transform.position = hit.point;
             Debug.Log("Hit Location: " + hit.point);
         }
