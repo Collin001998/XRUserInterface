@@ -6969,6 +6969,8 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 32
+  _smoothingFactor: 20
+  _movingthreshold: 0.02
 --- !u!1001 &1784574160
 PrefabInstance:
   m_ObjectHideFlags: 0
