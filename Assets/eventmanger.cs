@@ -9,6 +9,9 @@ public class eventmanger : MonoBehaviour
 
     [Serializable] public enum ProfileType { Offset, Default, Narrowed};
 
+    [SerializeField] private GameObject profileSelector;
+    [SerializeField] private GameObject mainMenu;
+
     public ProfileType profileType;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,7 +51,8 @@ public class eventmanger : MonoBehaviour
 
         if (profileType == ProfileType.Default)
         {
-            SceneManager.LoadScene("TemplateUI");
+            profileSelector.SetActive(false);
+            mainMenu.SetActive(true);
         }
         Debug.Log("pressed a button " + profileType);
     }
