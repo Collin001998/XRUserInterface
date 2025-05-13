@@ -1,6 +1,8 @@
+using Meta.XR.ImmersiveDebugger.UserInterface.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.Utilities;
 using UnityEngine.Serialization;
+using Slider = UnityEngine.UI.Slider;
 
 public class MoveMagnifier : MonoBehaviour
 {
@@ -10,7 +12,10 @@ public class MoveMagnifier : MonoBehaviour
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private float _smoothingFactor = 20f;
     [SerializeField] private float _movingthreshold;
+    
+    [SerializeField] private Slider settingsSlider;
 
+    private float magnificationStrenth = 1f;
     private bool Active = true;
     private Vector3 _lastGazePosition;
     private Vector3 _newGazePosition;
@@ -22,6 +27,13 @@ public class MoveMagnifier : MonoBehaviour
         
     }
 
+    public void ChangeStrenth()
+    {
+        
+        //float strenth = UnityEngine.Random.Range(0f, 1f);
+        float strenth = Mathf.Lerp(40f, 0f, settingsSlider.value);
+        Magnifier.GetComponentInChildren<Camera>().fieldOfView = strenth;
+    }
     public void ToggleMagnifier(bool toggle)
     {
         Active = toggle;
