@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 public class MoveMagnifier : MonoBehaviour
 {
     [SerializeField] private GameObject Magnifier;
+    [SerializeField] private Transform eyeTransform;
     [SerializeField] private float rayDistance = 1f;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private float _smoothingFactor = 20f;
@@ -20,7 +21,12 @@ public class MoveMagnifier : MonoBehaviour
     {
         
     }
-    
+
+    public void ToggleMagnifier(bool toggle)
+    {
+        Active = toggle;
+        Magnifier.SetActive(toggle);
+    }
     private void FixedUpdate()
     {
         
@@ -29,9 +35,9 @@ public class MoveMagnifier : MonoBehaviour
         {
             RaycastHit hit;
 
-            Vector3 direction = transform.TransformDirection(Vector3.forward) * rayDistance;
+            Vector3 direction = eyeTransform.TransformDirection(Vector3.forward) * rayDistance;
             
-            if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity, layerMask)){
+            if (Physics.Raycast(eyeTransform.position, direction, out hit, Mathf.Infinity, layerMask)){
                 Magnifier.SetActive(true);
                 _lastGazePosition = Magnifier.transform.position;
                 _newGazePosition = hit.point;

@@ -11,6 +11,7 @@ public class eventmanger : MonoBehaviour
 
     [SerializeField] private GameObject profileSelector;
     [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject settingsMenu;
 
     public ProfileType profileType;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -56,6 +57,13 @@ public class eventmanger : MonoBehaviour
         }
         Debug.Log("pressed a button " + profileType);
     }
+
+    public void OpenSettings()
+    {
+        mainMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
+    
     void CamerarigOnUpdatedAnchors(OVRCameraRig obj)
     {
         if (_hasHeightAdjusted) return;
