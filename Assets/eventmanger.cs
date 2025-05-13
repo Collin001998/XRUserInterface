@@ -74,4 +74,9 @@ public class eventmanger : MonoBehaviour
         
         
     }
+    
+    public void QuitApplication()
+    {
+        Application.Quit();
+    }
 }
