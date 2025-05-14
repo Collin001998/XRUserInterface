@@ -34,6 +34,12 @@ public class MoveMagnifier : MonoBehaviour
         float strenth = Mathf.Lerp(40f, 0f, settingsSlider.value);
         Magnifier.GetComponentInChildren<Camera>().fieldOfView = strenth;
     }
+    public void ChangeStrenth2(float strenth)
+    {
+        
+        //float strenth = UnityEngine.Random.Range(0f, 1f);
+        Magnifier.GetComponentInChildren<Camera>().fieldOfView = Mathf.Lerp(40f, 0f, strenth);
+    }
     public void ToggleMagnifier(bool toggle)
     {
         Active = toggle;
