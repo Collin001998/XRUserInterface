@@ -39,7 +39,18 @@ public class eventmanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (OVRInput.Get(OVRInput.Button.SecondaryThumbstick))
+        {
+            if (mainMenu.activeSelf)
+            {
+                mainMenu.SetActive(false);
+            }
+            else
+            {
+                mainMenu.SetActive(true);
+            }
+            
+        }
     }
 
     private void OnDestroy()
@@ -71,6 +82,11 @@ public class eventmanger : MonoBehaviour
     {
         mainMenu.SetActive(false);
         settingsMenu.SetActive(true);
+    }
+
+    public void LoadScene(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 
     public void ChangeContrastBrightness(float brightness)
