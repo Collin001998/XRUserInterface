@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class eventmanger : MonoBehaviour
@@ -13,6 +15,9 @@ public class eventmanger : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject settingsMenu;
 
+    [SerializeField] private Volume postProccessVolume;
+    private ColorAdjustments colorAdjustments;
+
     public ProfileType profileType;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +27,11 @@ public class eventmanger : MonoBehaviour
         {
             _ovrCameraRig.UpdatedAnchors += CamerarigOnUpdatedAnchors;
         }
-        
+
+        if (postProccessVolume.profile.TryGet(out colorAdjustments))
+        {
+            
+        }
 
         
     }
@@ -63,7 +72,15 @@ public class eventmanger : MonoBehaviour
         mainMenu.SetActive(false);
         settingsMenu.SetActive(true);
     }
-    
+
+    public void ChangeContrastBrightness(float brightness)
+    {
+        colorAdjustments.contrast.value = brightness;
+
+    }
+
+
+
     void CamerarigOnUpdatedAnchors(OVRCameraRig obj)
     {
         if (_hasHeightAdjusted) return;
