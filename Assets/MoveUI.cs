@@ -33,7 +33,7 @@ public class MoveUI : MonoBehaviour
             moveMagnifier.ToggleMagnifier(false);
             Vector3 direction = eyeTransform.TransformDirection(Vector3.forward) * rayDistance;
             UIRoot.transform.position = eyeTransform.position + direction;
-            UIRoot.transform.position = new Vector3(UIRoot.transform.position.x, UIRoot.transform.position.y, 0.4f);
+            UIRoot.transform.position = new Vector3(UIRoot.transform.position.x, UIRoot.transform.position.y, 0.8f);
 
             if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) >= 1f)
             {
