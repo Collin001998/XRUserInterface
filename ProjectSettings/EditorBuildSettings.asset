@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/old scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/UIProfiles.unity
     guid: 92aabd4d158500244b8aadfcc5205c60
   - enabled: 0
-    path: Assets/Scenes/TemplateUI.unity
+    path: Assets/Scenes/old scenes/TemplateUI.unity
     guid: cc451f688a93efa4ba50213a4a21efe5
   - enabled: 1
     path: Assets/Scenes/Minigame.unity
