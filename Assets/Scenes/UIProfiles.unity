@@ -523,7 +523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Uit
+      value: Off
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -3179,7 +3179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: medium
+      value: Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -5010,7 +5010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_text
-      value: Terug
+      value: Back
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_fontSize
@@ -5911,7 +5911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Algemeen
+      value: General
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -7201,7 +7201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8182325033161516267, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8182325033161516267, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -7735,7 +7735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_text
-      value: Verplaats
+      value: Move
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_fontSize
@@ -8064,7 +8064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Afstand
+      value: Offset
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -13800,7 +13800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_text
-      value: Terug
+      value: Back
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_fontSize
@@ -14367,7 +14367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Laag
+      value: Low
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -15133,7 +15133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_text
-      value: Instellingen
+      value: Settings
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_fontSize
@@ -15506,7 +15506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vergroot Sterkte
+  m_text: Magnifier Strength
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -16934,7 +16934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8182325033161516267, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8182325033161516267, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -17354,7 +17354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: VergrootGlas
+      value: Magnifier
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -19523,7 +19523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9210260128077714954, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: m_text
-      value: Standaard
+      value: Default
       objectReference: {fileID: 0}
     - target: {fileID: 9210260128077714954, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: m_fontSize
@@ -22890,7 +22890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Menu Locatie
+  m_text: Menu Location
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -23774,7 +23774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Normaal
+      value: Normal
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -24511,7 +24511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9210260128077714954, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: m_text
-      value: Afstand UI
+      value: Offset UI
       objectReference: {fileID: 0}
     - target: {fileID: 9210260128077714954, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: m_fontSize
@@ -24865,7 +24865,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sterren Game
+  m_text: Constalation Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -26413,7 +26413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Contrast
+  m_text: Contrast Brightness
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -27345,7 +27345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Extra Groot
+      value: Extra Large
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -28258,7 +28258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selecteer een profiel
+  m_text: Select a profile
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -29337,7 +29337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8182325033161516267, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 0.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8182325033161516267, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -30338,7 +30338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Hoog
+      value: High
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -33211,7 +33211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Aan
+      value: On
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -34479,7 +34479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Instellingen
+  m_text: Settings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -36304,7 +36304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_text
-      value: Afsluiten
+      value: Quit
       objectReference: {fileID: 0}
     - target: {fileID: 2169669742819329091, guid: 5f24ca91b38a6704f8f00ddbe45c0a48, type: 3}
       propertyPath: m_fontSize
@@ -36788,7 +36788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Groot
+      value: Large
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -37267,7 +37267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Letter Grote (in ontwikkeling)
+  m_text: Letter Size (in Development)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -39433,7 +39433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Flexibel UI
+      value: Flexible UI
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -40250,7 +40250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Algemene Instellingen
+  m_text: Settings -> General
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -41481,7 +41481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vergrootglas Instellingen
+  m_text: Settings -> Magnifier
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
@@ -42733,7 +42733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_text
-      value: Terug
+      value: Back
       objectReference: {fileID: 0}
     - target: {fileID: 4176905736460644474, guid: 5292db714b0f87045a7dfd9be93b1be5, type: 3}
       propertyPath: m_fontSize
@@ -43641,7 +43641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9210260128077714954, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: m_text
-      value: 'Versmalde UI '
+      value: 'Narrow UI '
       objectReference: {fileID: 0}
     - target: {fileID: 9210260128077714954, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: m_fontSize
@@ -43742,7 +43742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vergrootglas
+  m_text: Magnifier
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}
   m_sharedMaterial: {fileID: -6223558459148456298, guid: a222fad8d5376fc41af3bba0bb6d2e0f, type: 2}

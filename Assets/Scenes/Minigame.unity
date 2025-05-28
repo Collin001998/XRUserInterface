@@ -12180,7 +12180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1234312488749823225, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_text
-      value: Je hebt alle sterren verbonden
+      value: You connected all the stars.
       objectReference: {fileID: 0}
     - target: {fileID: 1234312488749823225, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_fontSize
@@ -12252,11 +12252,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3001445545365223663, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_text
-      value: Terug naar het menu
+      value: Back to main menu
       objectReference: {fileID: 0}
     - target: {fileID: 3001445545365223663, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001445545365223663, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 3045696043203106529, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_AnchorMax.y
@@ -12284,11 +12288,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246600873931162199, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_text
-      value: Opnieuw
+      value: Restart
       objectReference: {fileID: 0}
     - target: {fileID: 3246600873931162199, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246600873931162199, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 4082414051287832029, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_AnchorMax.y
@@ -12572,7 +12580,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 04fdbe9052e48864ca8b7b529918899b, type: 2}
     - target: {fileID: 7361729357112857676, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_text
-      value: Gefeliciteerd
+      value: Congratulations!
       objectReference: {fileID: 0}
     - target: {fileID: 7361729357112857676, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_fontSize
@@ -24307,7 +24315,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1234312488749823225, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_text
-      value: Verbind alle sterren, probeer alleen de ogen te gebruiken!
+      value: Connect all the stars with your gaze only, try to move your head as
+        little as possible
       objectReference: {fileID: 0}
     - target: {fileID: 1234312488749823225, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_fontSize
@@ -24595,7 +24604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7361729357112857676, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_text
-      value: Verbind de sterren
+      value: Connect the stars
       objectReference: {fileID: 0}
     - target: {fileID: 7361729357112857676, guid: ee824579eadf66544a0c3913fec1debf, type: 3}
       propertyPath: m_fontSize
