@@ -14864,11 +14864,11 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2
+    width: 1
     height: 1
   near clip plane: 0.1
   far clip plane: 1000
-  field of view: 12.5
+  field of view: 24
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -15369,7 +15369,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.13}
-  m_LocalScale: {x: 3, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 53289760}
