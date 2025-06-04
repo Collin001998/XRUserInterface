@@ -8,6 +8,7 @@ using Slider = UnityEngine.UI.Slider;
 public class MoveMagnifier : MonoBehaviour
 {
     [SerializeField] private GameObject testcube;
+    [SerializeField] private RayOrigin interactionRayOrigin;
     
     [SerializeField] private GameObject Magnifier;
     [SerializeField] private GameObject MagnifierZoom;
@@ -53,8 +54,6 @@ public class MoveMagnifier : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //testing something need to rervert later
-
         if (Active)
         {
             MagnifierZoom.GetComponent<Renderer>().material.SetFloat("_Radius", OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger));
@@ -64,6 +63,7 @@ public class MoveMagnifier : MonoBehaviour
             
             if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0)
             {
+                interactionRayOrigin.Magnifier = true;
                 RaycastHit hit2;
                 if (Physics.Raycast(eyeTransform.position, direction, out hit2, Mathf.Infinity, layerMask2)){
 
@@ -81,13 +81,17 @@ public class MoveMagnifier : MonoBehaviour
                         if (Physics.Raycast(renderCamRay, out RaycastHit renderHit,Mathf.Infinity, layerMask))
                         {
                             Debug.Log("Render camera ray hit: " + renderHit.collider.gameObject.name);
-                            testcube.transform.position = new Vector3(renderHit.point.x, renderHit.point.y, magnifierCamera.transform.position.z);
+                            testcube.transform.position = renderHit.point; //new Vector3(renderHit.point.x, renderHit.point.y, magnifierCamera.transform.position.z);
                         }
                         //testcube.transform.position = screenPos;
                     }
                 
                 }
                 return;
+            }
+            else
+            {
+                interactionRayOrigin.Magnifier = false;
             }
             RaycastHit hit;
 

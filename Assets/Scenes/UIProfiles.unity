@@ -10808,6 +10808,7 @@ GameObject:
   - component: {fileID: 464379822}
   - component: {fileID: 464379821}
   - component: {fileID: 464379820}
+  - component: {fileID: 464379824}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -10904,6 +10905,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &464379824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464379819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a207c09cd7a2fa4f97836e15bf9dce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EyeGazeObject: {fileID: 1776503420}
+  MagnifierObject: {fileID: 1811026734}
+  Magnifier: 1
 --- !u!1 &493135769
 GameObject:
   m_ObjectHideFlags: 0
@@ -32976,7 +32992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86b2e65049f90841b898b80c3ce2983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testcube: {fileID: 464379819}
+  testcube: {fileID: 1811026734}
+  interactionRayOrigin: {fileID: 464379824}
   Magnifier: {fileID: 53289759}
   MagnifierZoom: {fileID: 696432038}
   magnifierCamera: {fileID: 672768255}
@@ -38939,6 +38956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testcube: {fileID: 0}
+  interactionRayOrigin: {fileID: 0}
   Magnifier: {fileID: 53289759}
   MagnifierZoom: {fileID: 0}
   magnifierCamera: {fileID: 0}
@@ -39383,6 +39401,37 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _canvas: {fileID: 883264702}
+--- !u!1 &1811026734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811026735}
+  m_Layer: 0
+  m_Name: MagnifierRayOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1811026735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811026734}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1827702143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44167,7 +44216,7 @@ PrefabInstance:
     - target: {fileID: 8105528931859149806, guid: 44cf50d1a2e68b64791a3e3143ccda19, type: 3}
       propertyPath: _rayOrigin
       value: 
-      objectReference: {fileID: 1776503421}
+      objectReference: {fileID: 464379823}
     - target: {fileID: 8759371145072476454, guid: 44cf50d1a2e68b64791a3e3143ccda19, type: 3}
       propertyPath: _offset.z
       value: 0.03
@@ -47822,6 +47871,7 @@ SceneRoots:
   - {fileID: 849596840}
   - {fileID: 1108419882275385816}
   - {fileID: 1502986627}
+  - {fileID: 1811026735}
   - {fileID: 53289760}
   - {fileID: 1051810193}
   - {fileID: 464379823}
