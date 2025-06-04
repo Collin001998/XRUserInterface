@@ -1,4 +1,5 @@
 using Meta.XR.ImmersiveDebugger.UserInterface.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.Utilities;
 using UnityEngine.Serialization;
@@ -6,10 +7,15 @@ using Slider = UnityEngine.UI.Slider;
 
 public class MoveMagnifier : MonoBehaviour
 {
+    [SerializeField] private GameObject testcube;
+    
     [SerializeField] private GameObject Magnifier;
+    [SerializeField] private GameObject MagnifierZoom;
+    [SerializeField] private Camera magnifierCamera;
     [SerializeField] private Transform eyeTransform;
     [SerializeField] private float rayDistance = 1f;
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private LayerMask layerMask2;
     [SerializeField] private float _smoothingFactor = 20f;
     [SerializeField] private float _movingthreshold;
     
@@ -47,13 +53,45 @@ public class MoveMagnifier : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
+        //testing something need to rervert later
 
         if (Active)
         {
+            MagnifierZoom.GetComponent<Renderer>().material.SetFloat("_Radius", OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger));
+            // Debug.Log(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger));
+            
+            Vector3 direction = eyeTransform.TransformDirection(Vector3.forward) * rayDistance;
+            
+            if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0)
+            {
+                RaycastHit hit2;
+                if (Physics.Raycast(eyeTransform.position, direction, out hit2, Mathf.Infinity, layerMask2)){
+
+                    if (hit2.collider.gameObject)
+                    {
+                        Vector2 uv = hit2.textureCoord;
+                        Debug.Log("hit:" + uv);
+                        Vector3 screenPos = new Vector3(
+                            uv.x * magnifierCamera.pixelWidth,
+                            uv.y * magnifierCamera.pixelHeight,
+                            0
+                        );
+                        
+                        Ray renderCamRay = magnifierCamera.ScreenPointToRay(screenPos);
+                        if (Physics.Raycast(renderCamRay, out RaycastHit renderHit,Mathf.Infinity, layerMask))
+                        {
+                            Debug.Log("Render camera ray hit: " + renderHit.collider.gameObject.name);
+                            testcube.transform.position = new Vector3(renderHit.point.x, renderHit.point.y, magnifierCamera.transform.position.z);
+                        }
+                        //testcube.transform.position = screenPos;
+                    }
+                
+                }
+                return;
+            }
             RaycastHit hit;
 
-            Vector3 direction = eyeTransform.TransformDirection(Vector3.forward) * rayDistance;
+            
             
             if (Physics.Raycast(eyeTransform.position, direction, out hit, Mathf.Infinity, layerMask)){
                 Magnifier.SetActive(true);
@@ -74,20 +112,27 @@ public class MoveMagnifier : MonoBehaviour
             {
                 Magnifier.SetActive(false);
             }
+            
+            
+            
+            
+            
         }
         
-        if (OVRInput.Get(OVRInput.Button.One))
-        {
-            if (Active)
-            {
-                Active = false;
-                Magnifier.SetActive(false);
-            }
-            else
-            {
-                Active = true;
-            }
-        }
+        // if (OVRInput.Get(OVRInput.Button.One))
+        // {
+        //     if (Active)
+        //     {
+        //         Active = false;
+        //         Magnifier.SetActive(false);
+        //     }
+        //     else
+        //     {
+        //         Active = true;
+        //     }
+        // }
+        
+        
 
     }
 
