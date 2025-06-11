@@ -45,25 +45,29 @@ public class MoveMagnifier : MonoBehaviour
     {
         
         //float strenth = UnityEngine.Random.Range(0f, 1f);
-        Magnifier.GetComponentInChildren<Camera>().fieldOfView = Mathf.Lerp(40f, 0f, strenth);
+        Magnifier.GetComponentInChildren<Camera>().fieldOfView = Mathf.Lerp(100f, 0f, strenth);
     }
     public void ToggleMagnifier(bool toggle)
     {
         Active = toggle;
         Magnifier.SetActive(toggle);
+        interactionRayOrigin.Magnifier = false;
     }
     private void FixedUpdate()
     {
         if (Active)
         {
             MagnifierZoom.GetComponent<Renderer>().material.SetFloat("_Radius", OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger));
-            // Debug.Log(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger));
-            
             Vector3 direction = eyeTransform.TransformDirection(Vector3.forward) * rayDistance;
             
-            if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0)
+            if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0 || OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0)
             {
+                //while magnifier size is active allow the ability to move the magnifier by using the thubsticks
+                Vector2 thumbstic = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+                Vector3 moveDirection = new Vector3(thumbstic.x, thumbstic.y, 0);
+                Magnifier.transform.Translate(moveDirection * 0.5f * Time.deltaTime, Space.World);
                 interactionRayOrigin.Magnifier = true;
+                
                 RaycastHit hit2;
                 if (Physics.Raycast(eyeTransform.position, direction, out hit2, Mathf.Infinity, layerMask2)){
 
@@ -94,8 +98,6 @@ public class MoveMagnifier : MonoBehaviour
                 interactionRayOrigin.Magnifier = false;
             }
             RaycastHit hit;
-
-            
             
             if (Physics.Raycast(eyeTransform.position, direction, out hit, Mathf.Infinity, layerMask)){
                 Magnifier.SetActive(true);
@@ -116,28 +118,7 @@ public class MoveMagnifier : MonoBehaviour
             {
                 Magnifier.SetActive(false);
             }
-            
-            
-            
-            
-            
         }
-        
-        // if (OVRInput.Get(OVRInput.Button.One))
-        // {
-        //     if (Active)
-        //     {
-        //         Active = false;
-        //         Magnifier.SetActive(false);
-        //     }
-        //     else
-        //     {
-        //         Active = true;
-        //     }
-        // }
-        
-        
-
     }
 
     // Update is called once per frame

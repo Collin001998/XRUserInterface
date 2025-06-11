@@ -167,7 +167,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.73333335
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -188,7 +188,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.9803922
+        value: 0.23137257
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -209,7 +209,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5254902
+        value: 0.29411766
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -369,7 +369,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.39607847
+        value: 0.11764707
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -390,7 +390,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.121568635
+        value: 0.039215688
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -411,7 +411,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.27450982
+        value: 0.6666667
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -520,7 +520,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.06786222
+        value: 0.69803923
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -541,7 +541,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5754717
+        value: 0.13333334
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -562,7 +562,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.56566286
+        value: 0.20392159
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -703,7 +703,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SecondaryButton_HighContrast
+  m_Name: DestructiveButton_HighContrast_2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Normal
@@ -788,7 +788,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.27450982
+        value: 0.3254902
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -809,7 +809,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.12156863
+        value: 0.12941177
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -830,7 +830,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.39607844
+        value: 0.18823531
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -989,7 +989,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.7254902
+        value: 0.6666667
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1010,7 +1010,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.3803922
+        value: 0.039215688
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1031,7 +1031,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.1137255
+        value: 0.11764707
         inSlope: 0
         outSlope: 0
         tangentMode: 0

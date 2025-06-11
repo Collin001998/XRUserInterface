@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/old scenes/TemplateUI.unity
     guid: cc451f688a93efa4ba50213a4a21efe5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Minigame.unity
     guid: 4e026c5d0ace8ff4eb1f4d12701fbf9f
   m_configObjects:

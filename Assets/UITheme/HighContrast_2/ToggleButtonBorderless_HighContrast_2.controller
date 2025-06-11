@@ -39,7 +39,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.27450982
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -60,7 +60,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.121568635
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -81,7 +81,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.39607847
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -697,7 +697,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.7254902
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -718,7 +718,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.3803922
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -739,7 +739,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.1137255
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1456,7 +1456,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.06666667
+        value: 0.20000002
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1477,7 +1477,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5764706
+        value: 0.6
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1498,7 +1498,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5647059
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1700,7 +1700,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToggleButtonBorderless_HighContrast
+  m_Name: ToggleButtonBorderless_HighContrast_2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Normal
@@ -2024,7 +2024,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -2045,7 +2045,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.9803922
+        value: 0.2
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -2066,7 +2066,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5254902
+        value: 0.8
         inSlope: 0
         outSlope: 0
         tangentMode: 0
