@@ -12,6 +12,15 @@ TagManager:
   - QDSUIAccentColor
   - QDSUITextInvertedColor
   - QDSUITextSecondaryInvertedColor
+  - QDSUISection
+  - QDSUIBackplateGradient
+  - QDSUITooltip
+  - QDSUIToggleBorderlessButton
+  - QDSUISharedThemeColor
+  - QDSUIToggleSwitch
+  - QDSUIDestructiveButton
+  - QDSUIBorderlessButton
+  - QDSUITextInputField
   layers:
   - Default
   - TransparentFX

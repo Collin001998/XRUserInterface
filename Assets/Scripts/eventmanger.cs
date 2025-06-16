@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class eventmanger : MonoBehaviour
@@ -11,6 +13,10 @@ public class eventmanger : MonoBehaviour
 
     [SerializeField] private GameObject profileSelector;
     [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject settingsMenu;
+
+    [SerializeField] private Volume postProccessVolume;
+    private ColorAdjustments colorAdjustments;
 
     public ProfileType profileType;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,7 +27,11 @@ public class eventmanger : MonoBehaviour
         {
             _ovrCameraRig.UpdatedAnchors += CamerarigOnUpdatedAnchors;
         }
-        
+
+        if (postProccessVolume.profile.TryGet(out colorAdjustments))
+        {
+            
+        }
 
         
     }
@@ -29,7 +39,18 @@ public class eventmanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (OVRInput.Get(OVRInput.Button.SecondaryThumbstick))
+        {
+            if (mainMenu.activeSelf)
+            {
+                mainMenu.SetActive(false);
+            }
+            else
+            {
+                mainMenu.SetActive(true);
+            }
+            
+        }
     }
 
     private void OnDestroy()
@@ -56,6 +77,26 @@ public class eventmanger : MonoBehaviour
         }
         Debug.Log("pressed a button " + profileType);
     }
+
+    public void OpenSettings()
+    {
+        mainMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
+
+    public void LoadScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
+    public void ChangeContrastBrightness(float brightness)
+    {
+        colorAdjustments.contrast.value = brightness;
+
+    }
+
+
+
     void CamerarigOnUpdatedAnchors(OVRCameraRig obj)
     {
         if (_hasHeightAdjusted) return;
@@ -65,5 +106,10 @@ public class eventmanger : MonoBehaviour
         _hasHeightAdjusted = true;
         
         
+    }
+    
+    public void QuitApplication()
+    {
+        Application.Quit();
     }
 }
